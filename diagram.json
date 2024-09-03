@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Harsha Suji",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -113.7, "left": 34.3, "attrs": {} }
+  ],
+  "connections": [
+    [ "ultrasonic1:TRIG", "uno:12", "green", [ "v28.8", "h18.8" ] ],
+    [ "ultrasonic1:ECHO", "uno:11", "green", [ "v28.8", "h18.4" ] ],
+    [ "ultrasonic1:VCC", "uno:5V", "red", [ "v211.2", "h48" ] ],
+    [ "ultrasonic1:GND", "uno:GND.2", "black", [ "v211.2", "h27.6" ] ]
+  ],
+  "dependencies": {}
+}
